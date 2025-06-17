@@ -1,0 +1,134 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f7f8fc, #e3ecf5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+  min-height: 100vh;
+  color: #333;
+}
+
+.quiz-container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  padding: 25px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.title {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+#question {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+#options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#options button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #3498db;
+  color: white;
+  font-size: 1em;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+#options button:hover {
+  background-color: #2980b9;
+}
+
+#options button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+#next-btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#next-btn:hover {
+  background-color: #27ae60;
+}
+
+#result-box {
+  padding: 20px;
+  font-size: 1.1em;
+}
+
+#result-box h2 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+#result-text {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+#result-box button {
+  background-color: #e67e22;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#result-box button:hover {
+  background-color: #d35400;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .quiz-container {
+    padding: 20px 15px;
+  }
+
+  .title {
+    font-size: 1.3em;
+  }
+
+  #question {
+    font-size: 1.1em;
+  }
+
+  #options button {
+    font-size: 0.95em;
+  }
+
+  #next-btn, #result-box button {
+    width: 100%;
+  }
+}
