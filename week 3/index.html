@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Та америк хүнтэй хэдэн хувь төстэй вэ?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="result-box" style="display: none;">
+  <p id="result-text"></p>
+  <button id="fb-share-btn" style="display: none;">Facebook-д хуваалцах</button>
+<p id="contact-info" style="margin-top: 20px;">
+  Холбоо барих: 
+  <a href="https://mail.google.com/mail/?view=cm&to=yukimongolia@gmail.com" target="_blank">
+    yukimongolia@gmail.com
+  </a>
+</p>
+</p>
+</div>
+
+  <div class="quiz-container">
+    <h1 class="title">Та америк хүнтэй хэдэн хувь төстэй вэ?</h1>
+
+    <div id="quiz-box">
+      <div id="question">Асуулт ачааллаж байна...</div>
+      <div id="options"></div>
+      <button id="next-btn" disabled>Дараагийн асуулт</button>
+    </div>
+
+    <div id="result-box" style="display: none;">
+      <h2>Таны үр дүн:</h2>
+      <p id="result-text"></p>
+      <button onclick="restartQuiz()">Дахин оролдох</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
